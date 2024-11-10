@@ -1,0 +1,51 @@
+class Parent {
+    String eyeColor = "Brown";
+    String hairColor = "Black";
+    String nose = "flat nose";
+    float height = 5.2f; 
+}
+
+class Child1 extends Parent {
+
+    public void first() {
+        System.out.println("Ate has " + hairColor + " hair and " + eyeColor + " eyes.");
+    }
+}
+
+class Child2 extends Parent {
+
+    public void second() {
+        System.out.println("Kuya Robert has " + hairColor + " hair and " + eyeColor + " eyes.");
+    }
+}
+
+class Child3 extends Parent {
+
+    public void third() {
+        System.out.println("Kuya Jay-ar has " + hairColor + " hair, " + nose + ", and " + eyeColor + " eyes.");
+    }
+}
+
+class Child4 extends Parent {
+
+    public void fourth() {
+        System.out.println("I am Jane. My hair color is " + hairColor + ", my height is " + height + ", and my eye color is " + eyeColor + ".");
+    }
+}
+
+public class HierarchicalInheritance {
+    public static void main(String[] args) {
+        Child1 ate = new Child1();
+        Child2 kuya = new Child2();
+        Child3 kuya2 = new Child3();    
+        Child4 jane = new Child4();
+
+        ate.first();
+		System.out.println();
+        kuya.second();
+		System.out.println();
+        kuya2.third();
+		System.out.println();
+        jane.fourth();
+    }
+}
