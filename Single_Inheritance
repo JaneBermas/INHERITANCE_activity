@@ -1,0 +1,31 @@
+class Mother {
+	String Features = "Beautiful";
+	String EyeColor = "Brown";
+
+	public void printMotherFeatures() {
+		System.out.println("my Mother is " + Features);
+		System.out.println("she has a " + EyeColor + " eye color");
+	}
+}
+
+class Daughter extends Mother {
+
+	String Features = super.Features;
+	String EyeColor = super.EyeColor;
+
+	public void printDaughterFeatures() {
+		System.out.println("I am " + Features);
+		System.out.println("My eye color is " + EyeColor);
+		System.out.println("I am a good girl");
+	}
+}
+
+public class SingleInheritance {
+	public static void main(String[] args) {
+
+		Daughter features = new Daughter();
+		features.printMotherFeatures();
+		System.out.println();
+		features.printDaughterFeatures();
+	}
+}
